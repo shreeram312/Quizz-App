@@ -73,4 +73,17 @@ public class Question {
     public void setAns(String ans) {
         this.ans = ans;
     }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", question='" + question + '\'' +
+                ", op1='" + op1 + '\'' +
+                ", op2='" + op2 + '\'' +
+                ", op3='" + op3 + '\'' +
+                ", op4='" + op4 + '\'' +
+                ", ans='" + ans + '\'' +
+                '}';
+    }
 }
