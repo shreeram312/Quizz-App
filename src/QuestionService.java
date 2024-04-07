@@ -39,15 +39,17 @@ public class QuestionService {
         int score =0;
 
         for(int i =0;i<question.length;i++){
-            if(sel[i]==question[i].getAns()){
-                score++;
-                System.out.println(score);
-            }
-            else {
-                System.out.println("Wrong ans");
-            }
+            Question q = question[i];
+            String ans = q.getAns();
+            String userAns = sel[i];
+            if(ans.equals(userAns)){
 
+                score++;
+            }
         }
+        System.out.println("");
+        System.out.println("Congratualtions !!!! Your Score is " +score + " out of "+question.length);
+
 
     }
 
